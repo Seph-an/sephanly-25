@@ -2,15 +2,17 @@ import ContactItem from "./ContactItem";
 
 const Contact = () => {
   const contacts = [
-    { title: "Phone", content: ["02-07-86-86-06"] },
-    { title: "E-mail", content: ["solutions@sephanly.com"] },
+    { title: "Phone", content: ["02-07-86-86-06"], canCopy: true },
+    { title: "E-mail", content: ["solutions@sephanly.com"], canCopy: true },
     {
       title: "Hours",
       content: ["8:00 am - 5:00 pm, Mon - Fri", "8:00 am - 1:00 pm, Sat"],
+      canCopy: false,
     },
     {
       title: "Socials",
       content: ["Twitter: @sephanly", "Facebook: sephanly"],
+      canCopy: false,
     },
   ];
   return (

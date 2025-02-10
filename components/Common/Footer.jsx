@@ -19,13 +19,13 @@ const Footer = () => {
   const iconWidth = 2;
   const iconStyles = "flex items-center gap-2 ";
   const footerTitles = " gap-1 flex items-center mb-2";
-  const footer_style = "text-elementary font-semibold text-lg ";
+  const footer_style = "text-elementary font-semibold text-base sm:text-lg ";
   const currentYear = new Date().getFullYear();
   const year = `©️ ${currentYear}`;
   return (
     <footer className="z-20 w-screen bg-secondary">
-      <div className="max-w-7xl flex justify-between gap-3 mx-auto text-white  py-12">
-        <div className="contacts flex flex-col w-fit">
+      <div className=" container flex flex-wrap justify-between gap-5 sm:gap-3 text-white  py-12">
+        <div className=" flex flex-col w-fit">
           <div className={footerTitles}>
             <UserSearch
               color={iconColor}
@@ -173,8 +173,8 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex items-center gap-4 lg:flex-col lg:items-start lg:gap-5">
-          <Link href="#">
+        <div className="mt-8 sm:mt-0 flex items-center gap-6 sm:gap-4 flex-col  pt-8">
+          <Link href="/">
             <Image
               src="/logo-web-development-footer.svg"
               alt="web-development-ui-ux-api-integration-web-design-website"
@@ -184,7 +184,7 @@ const Footer = () => {
             />
           </Link>
 
-          <p className="text-sm max-w-60 sm:text-base lg:max-w-72">
+          <p className="text-center md:text-left w-full sm:max-w-60 text-base lg:max-w-72">
             We specialize in guiding individuals to achieve their professional
             goals, and take great pride in their progress and success.
           </p>

@@ -9,15 +9,8 @@ const Why = () => {
       id="layman"
       className="sections-set relative w-screen pb-12  text-secondary bg-tertiary"
     >
-      <div className="z-5 relative flex flex-col items-center h-full">
+      <div className="container z-5 relative flex flex-col items-center h-full">
         <h2 className="sub-headers ">Understanding the digital space</h2>
-        {/* <h3 className="max-w-6xl text-center text-lg mt-8">
-          Imagine a scenario where you are not restricted by space, employees or
-          location. You can seemlessly serve hundreds, thousands, perhaps even
-          millions of your potential clients, all at the same time.That is{" "}
-          <span className="text-primary">what going online means</span> for your
-          bussiness.
-        </h3> */}
         <Layman />
         <p className="text-lg text-center mb-8">
           Get started building your digital footprint today and{" "}

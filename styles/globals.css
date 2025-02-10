@@ -74,7 +74,7 @@ html {
   }
 }
 .large-btn {
-  @apply mt-12 bg-primary text-tertiary rounded-md shadow-lg py-5 px-5 text-xl w-[300px] font-medium flex justify-center items-center gap-3 transition-all ease-in-out delay-150 hover:bg-green-800;
+  @apply mt-6 sm:mt-12 p-5 text-xl w-[300px] gap-3  bg-primary text-tertiary rounded-md shadow-lg font-medium flex justify-center items-center  transition-all ease-in-out delay-150 hover:bg-green-800;
 }
 .nav-btn {
   @apply text-base text-white bg-primary shadow-lg p-2.5 rounded-md transition-all ease-in-out delay-150 hover:bg-green-800;
@@ -133,6 +133,9 @@ html {
 }
 .app {
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+.container {
+  @apply max-w-7xl mx-auto sm:px-16 px-6;
 }
 .nav_bar {
   @apply flex justify-between items-center max-w-7xl   mx-auto;
