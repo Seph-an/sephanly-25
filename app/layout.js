@@ -1,5 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "@styles/globals.css";
+import { Providers } from "./Providers";
+import Nav from "@components/Common/Header";
+import Footer from "@components/Common/Footer";
+import Top from "@components/Common/Top";
+
 // import Nav from "@components/Nav";
 // import Footer from "@components/Footer";
 // import Top from "@components/Top";
@@ -22,16 +27,21 @@ const RootLayout = ({ children }) => {
         <div className="main">
           <div className="gradient" />
         </div>
-        <main className="app">
-          {children}
-          {/* <Nav />
+        <Providers>
+          <main className="app">
+            <Nav />
+            {children}
+            <Footer />
+            <Top />
+            {/* <Nav />
           <Providers>{children}</Providers>
           <Footer />
           <ChatOptions />
           <Chat />
           <Top />
           <CookieAlert /> */}
-        </main>
+          </main>
+        </Providers>
       </body>
     </html>
   );
