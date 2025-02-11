@@ -24,8 +24,7 @@ const Nav = () => {
   };
 
   return (
-    // <nav className="flex-col w-full py-3">
-    <nav className="nav_bar ">
+    <nav className="nav_bar container">
       <Link href="/" className="">
         <Image
           src="/logo-web-development.svg"
@@ -33,53 +32,46 @@ const Nav = () => {
           alt="sephanly-software-solutions-logo"
           width={100}
           height={100}
-          className="w-[100px] h-auto ml-[-1rem] lg:w-[220px] object-contain"
+          className="w-[250px] h-auto ml-[-1rem]  object-contain"
         />
       </Link>
 
-      <div className=" flex  items-center gap-12">
-        <div className="flex justify-center items-center gap-5">
+      <div className="flex  items-center gap-12">
+        <div className=" flex justify-center items-center gap-5">
           <div
             className={`${
               isMenuOpen ? "menu_links" : "hidden"
             } lg:flex justify-around items-center gap-12 `}
           >
-            <Link href="#" className="nav_link">
+            <Link href="/" className="nav_link">
               Home
             </Link>
-            <Link href="#" className="nav_link">
+            <Link href="/about-us" className="nav_link">
               About
             </Link>
-            <Link href="#" className="nav_link">
+            <Link href="/digital-solutions" className="nav_link">
               Services
             </Link>
-            <Link href="#" className="nav_link">
+            <Link href="/blog" className="nav_link">
               Blog
             </Link>
-            <Link href="#" className="nav_link">
+            <Link href="/contact-us-for-software-services" className="nav_link">
               Contact
             </Link>
+            <Quotation large={false} />
           </div>
 
           <button className="block lg:hidden" onClick={toggleMenu}>
-            {isMenuOpen ? (
-              <Menu color="#34464f" size={40} strokeWidth={2} />
+            {!isMenuOpen ? (
+              <Menu color="#16a34a" size={50} strokeWidth={2} />
             ) : (
-              <X color="#34464f" size={40} strokeWidth={2} />
+              <X color="#16a34a" size={40} strokeWidth={2} />
             )}
             <span className="sr-only">MENU</span>
           </button>
         </div>
-        <Quotation large={false} />
-        {/* <Link
-          href="#"
-          className="text-base text-white bg-green-600 shadow-lg p-2.5 rounded-md transition-all ease-in-out delay-150 hover:bg-red "
-        >
-          Get Quotation
-        </Link> */}
       </div>
     </nav>
-    // </nav>
   );
 };
 

@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 
 const ServiceCards = () => {
   return (
-    <div className="max-w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8 sm:my-auto">
+    <div className="w-full grid items-stretch grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 my-8 lg:my-12">
       {ServiceDetails.map((service, index) => (
         <div key={index}>
           <ServiceCard service={service} />

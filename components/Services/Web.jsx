@@ -8,8 +8,9 @@ const Web = ({ large }) => {
         <h2 className="sub-headers">Web Development</h2>
         <h3 className="service-sub">
           Your website is the cornerstone of your digital presence. We craft
-          responsive, scalable websites that captivate your audience and drive
-          conversions.
+          responsive, scalable websites that{" "}
+          <span className="text-primary">captivate your audience</span> and
+          drive conversions.
         </h3>
         <div className="service-detail">
           <Image

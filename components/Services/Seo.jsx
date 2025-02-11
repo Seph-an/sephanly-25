@@ -15,7 +15,7 @@ const Seo = ({ large }) => {
           authority
         </h3>
         <div className="service-detail">
-          <div className="service-content">
+          <div className="service-content order-2 lg:order-1">
             <p className="service-listIntro">
               Our comprehensive approach includes:
             </p>
@@ -49,7 +49,7 @@ const Seo = ({ large }) => {
             width={400}
             height={300}
             sizes="(max-width: 600px) 100%, (max-width: 1200px) 50vw, 33vw"
-            className="service-image"
+            className="service-image order-1 lg:order-2"
           />
         </div>
       </div>
@@ -57,4 +57,3 @@ const Seo = ({ large }) => {
   );
 };
 export default Seo;
-//web-development-web-design-cloud-computing.svg

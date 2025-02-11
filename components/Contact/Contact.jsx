@@ -17,8 +17,8 @@ const Contact = () => {
   ];
   return (
     <section className="text-secondary min-h-screen w-full py-5 flex items-center justify-center lg:py-24">
-      <div className="contact-border flex-1 max-w-7xl my-auto ">
-        <h1 className="  mt-3 mb-2 text-xl xs-custom:text-2xl sm:text-4xl font-semibold leading-[1.15] text-cool-blue md:mb-5">
+      <div className="contact-border flex-1 container mt-20 ">
+        <h1 className="my-3 text-xl xs-custom:text-2xl sm:text-4xl font-semibold leading-[1.15] text-cool-blue md:mb-5">
           Get in touch
         </h1>
         <p className=" text-base text-cool-blue opacity-90 max-w-3xl sm:text-xl">
@@ -26,7 +26,7 @@ const Contact = () => {
           professional goals, and take great pride in their progress and
           success. Talk to us.
         </p>
-        <div className=" grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-5 mt-12 lg:mt-24 mb-7 xs:mt-14 sm:mt-16">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-5 mt-12 lg:mt-24 mb-7 xs:mt-14 sm:mt-16">
           {contacts.map((item, index) => (
             <ContactItem key={index} item={item} />
           ))}

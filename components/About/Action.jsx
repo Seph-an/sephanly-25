@@ -16,7 +16,7 @@ const actions = [
 ];
 const Action = () => {
   return (
-    <div className="flex justify-between flex-wrap items-center md:items-stretch  gap-6 my-20">
+    <div className="flex justify-between flex-wrap items-center md:items-stretch  gap-6 my-6 sm:my-12 md:my-20">
       {actions.map((action, index) => {
         return (
           <div key={index} className={`about-action`}>
@@ -34,7 +34,7 @@ const Action = () => {
               width={100}
               height={80}
               sizes="(max-width: 600px) 200px, (max-width: 1200px) 200px, 200px"
-              className="absolute bottom-0 right-0 service-image"
+              className="absolute bottom-0 right-0 hidden md:block service-image"
             />
             <h3 className="about-card-title border-l-2 border-primary  pl-2">
               {action.title}

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 const ServiceCard = ({ service }) => {
@@ -14,7 +13,7 @@ const ServiceCard = ({ service }) => {
         </div>
         <h3 className="card-title">{service.title}</h3>
       </div>
-      <p>{service.description}</p>
+      <p className="text-base opacity-90">{service.description}</p>
       <div className="flex items-center gap-2">
         <span className="font-medium text-primary">Explore</span>
         <ArrowRight color="#16a34a" size={18} />

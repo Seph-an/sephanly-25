@@ -3,11 +3,13 @@ import Subscribe from "./Subscribe";
 import CopyText from "@components/Common/Copy";
 const Careers = () => {
   return (
-    <section className="w-screen pt-28 pb-16">
-      <div className="max-w-7xl mx-auto text-secondary flex flex-wrap justify-between items-center gap-6 mt-6">
+    <section className="w-screen pt-20 sm:pt-28 pb-16">
+      <div className="container text-secondary flex flex-col lg:flex-row justify-between items-center gap-6 mt-6">
         <div className="flex flex-col gap-3 justify-center">
-          <h1 className=" font-bold text-4xl">Careers</h1>
-          <h3 className="lg:text-lg max-w-2xl my-6">
+          <h1 className=" font-bold text-center md:text-start text-4xl">
+            Careers
+          </h1>
+          <h3 className="text-base lg:text-lg max-w-2xl my-6">
             We are currently <span className="text-red-500 ">not hiring,</span>{" "}
             but you can still{" "}
             <span className="text-primary font-medium">
@@ -16,7 +18,7 @@ const Careers = () => {
             when an opportunity arises. Drop your email for updates.
           </h3>
           <Subscribe />
-          <h3>
+          <h3 className="text-base lg:text-lg max-w-2xl text-center md:text-start">
             You can also <span className="text-primary">follow us</span> on our
             socials to keep abreast with such new developments:
           </h3>

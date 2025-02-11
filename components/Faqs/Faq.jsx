@@ -146,8 +146,8 @@ export default function FAQ() {
       <FAQAccordion title="API Integration FAQs" items={apiIntegrationFAQs} />
       <FAQAccordion title="UI/UX Design FAQs" items={uiuxFAQs} />
       <FAQAccordion title="Custom Software FAQs" items={customSoftwareFAQs} />
-      <div className="py-8">
-        <p className="max-w-3xl">
+      <div className="py-8 flex flex-col items-center">
+        <p className="max-w-3xl opacity-90">
           <span className="text-lg text-primary font-medium">
             Ready to elevate your digital success?
           </span>{" "}

@@ -83,26 +83,25 @@ html {
   @apply pt-12;
 }
 .sub-headers {
-  @apply font-semibold text-center text-2xl;
+  @apply font-semibold text-center text-xl sm:text-2xl;
 }
 .sub-paragraph {
   @apply max-w-4xl text-center text-lg mt-8;
 }
 .card-title {
-  @apply font-semibold text-center;
+  @apply font-semibold text-start;
 }
 .service-section {
   @apply w-screen min-h-screen py-10  text-secondary;
 }
 .service-div {
-  @apply max-w-7xl h-full mx-auto my-auto flex flex-col justify-center items-center gap-3;
+  @apply container h-full my-auto flex flex-col justify-center items-center gap-3;
 }
-
 .service-sub {
-  @apply text-lg max-w-4xl text-center;
+  @apply text-base sm:text-lg max-w-4xl text-center opacity-90 z-10;
 }
 .service-detail {
-  @apply w-full flex justify-between mt-6;
+  @apply w-full flex items-center flex-wrap lg:flex-nowrap lg:justify-between mt-6;
 }
 .service-image {
   @apply w-full lg:w-1/3;
@@ -132,19 +131,19 @@ html {
   @apply text-secondary;
 }
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto md:px-16 px-6;
 }
 .container {
-  @apply max-w-7xl mx-auto sm:px-16 px-6;
+  @apply max-w-7xl mx-auto px-6 sm:px-8 xl:px-0;
 }
 .nav_bar {
-  @apply flex justify-between items-center max-w-7xl   mx-auto;
+  @apply flex justify-between items-center;
 }
 .nav_link {
   @apply transition-all ease-in-out delay-150 text-secondary text-base;
 }
 .menu_links {
-  @apply absolute top-28 z-30 p-5 shadow-lg flex flex-col rounded-2xl gap-4;
+  @apply absolute top-28 z-30 p-5 shadow-lg flex flex-col rounded-lg gap-4 bg-tertiary;
   right: 5vw;
 }
 
@@ -176,7 +175,7 @@ html {
 
 /* contact page */
 .border-look {
-  @apply min-h-[100px] relative border-l-[2px] border-opacity-50  pl-4 after:content-[''] after:absolute after:top-0 after:left-[-2px] after:w-[2px] after:h-1/4 after:bg-primary;
+  @apply min-h-fit sm:min-h-[100px] relative border-l-[2px] border-opacity-50  pl-4 after:content-[''] after:absolute after:top-0 after:left-[-2px] after:w-[2px] after:h-1/4 after:bg-primary;
 }
 .contact-border {
   @apply min-h-[100px] relative border-r-[2px] border-opacity-50 pr-4 after:content-[''] after:absolute after:top-0 after:right-[-2px] after:h-1/4 after:w-[2px] after:bg-primary;
@@ -191,7 +190,7 @@ html {
   @apply text-lg font-semibold;
 }
 .about-action {
-  @apply flex flex-1 flex-col gap-3 rounded-lg bg-tertiary p-12 min-h-8 h-[auto]  shadow-lg relative;
+  @apply flex sm:flex-1 flex-col gap-3 rounded-lg bg-tertiary p-8 sm:p-12 min-h-8 h-[auto] shadow-lg relative;
 }
 /* blog */
 .blog_lists > div:last-child hr {

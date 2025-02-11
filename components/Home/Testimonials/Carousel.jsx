@@ -30,7 +30,7 @@ export default function Marquee() {
                   alt={`Slide ${index + 1}`}
                   width={150}
                   height={150}
-                  className="bg-white p-3 rounded-lg w-[150px] aspect-square shadow-lg"
+                  className="bg-white p-3 rounded-lg w-[100px] sm:w-[150px] aspect-square shadow-lg"
                   loading="lazy"
                 />
               </div>
@@ -44,7 +44,7 @@ export default function Marquee() {
                   alt={`Slide ${index + 1}`}
                   width={150}
                   height={150}
-                  className="bg-white p-3 rounded-lg w-[150px] aspect-square shadow-lg"
+                  className="bg-white p-3 rounded-lg w-[100px] sm:w-[150px] aspect-square shadow-lg"
                   loading="lazy"
                 />
               </div>

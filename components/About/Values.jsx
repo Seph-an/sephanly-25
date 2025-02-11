@@ -33,7 +33,7 @@ const coreValues = [
 
 const CoreValuesGrid = () => {
   return (
-    <div className="grid justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 mb-32">
+    <div className="grid justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 mt-16 mb-16 sm:mb-20 lg:mb-24 xl:mb-32">
       {coreValues.map((value, index) => {
         return (
           <div key={index} className={`about-card`}>

@@ -44,22 +44,22 @@ const Hero = () => {
 
   return (
     <section className="w-screen pt-28 pb-16 bg-tertiary">
-      <div className="max-w-7xl mx-auto text-secondary">
-        <h1 className="text-center font-semibold text-4xl">
+      <div className=" container text-secondary">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl  font-semibold text-center">
           Explore our digital solutions
         </h1>
         <div
           id="stickyNav"
-          className={` ${
+          className={`${
             isFixed
-              ? "fixed mt-0 w-full top-0 bg-secondary p-2 left-1/2 transform -translate-x-1/2"
-              : "mt-12 relative mx-auto"
+              ? "fixed mt-0 w-full top-0 bg-secondary p-2 left-1/2 transform -translate-x-1/2 z-20"
+              : "mt-12 relative mx-auto z-20"
           }`}
         >
           <ul
-            className={`transition-all duration-300 lg:text-lg font-medium flex justify-between flex-wrap gap-3 list-none ${
+            className={`transition-all duration-300 relative text-base lg:text-lg font-medium flex justify-center md:justify-between flex-wrap gap-3 list-none ${
               isFixed
-                ? "w-full bg-tertiary shadow-md py-6 px-6 z-50 rounded-lg"
+                ? "w-full bg-tertiary shadow-md p-4 sm:p-6  rounded-lg"
                 : ""
             }`}
           >

@@ -14,17 +14,18 @@ import {
 } from "lucide-react";
 
 const Footer = () => {
-  const iconColor = "#92e3a9";
+  const iconColor = "#16a34a";
+  // const iconColor = "#92e3a9";
   const iconSize = 20;
   const iconWidth = 2;
   const iconStyles = "flex items-center gap-2 ";
-  const footerTitles = " gap-1 flex items-center mb-2";
-  const footer_style = "text-elementary font-semibold text-base sm:text-lg ";
+  const footerTitles = " gap-1 flex items-center mb-3";
+  const footer_style = "text-primary font-semibold text-base sm:text-lg ";
   const currentYear = new Date().getFullYear();
   const year = `©️ ${currentYear}`;
   return (
     <footer className="z-20 w-screen bg-secondary">
-      <div className=" container flex flex-wrap justify-between gap-5 sm:gap-3 text-white  py-12">
+      <div className=" container flex flex-wrap justify-between gap-6 text-white  py-12">
         <div className=" flex flex-col w-fit">
           <div className={footerTitles}>
             <UserSearch
@@ -81,7 +82,9 @@ const Footer = () => {
                 size={iconSize}
                 strokeWidth={iconWidth}
               />{" "}
-              <span>Suite A104, Madonna House Annex - Off Westlands Road</span>{" "}
+              <span className="max-w-[300px]">
+                Suite A104, Madonna House Annex - Off Westlands Road
+              </span>{" "}
             </li>
           </ul>
         </div>
@@ -173,7 +176,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="mt-8 sm:mt-0 flex items-center gap-6 sm:gap-4 flex-col  pt-8">
+        <div className="flex items-center gap-6 sm:gap-4 flex-col  pt-8 sm:pt-0">
           <Link href="/">
             <Image
               src="/logo-web-development-footer.svg"
