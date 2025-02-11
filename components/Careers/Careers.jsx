@@ -3,7 +3,7 @@ import Subscribe from "./Subscribe";
 import CopyText from "@components/Common/Copy";
 const Careers = () => {
   return (
-    <section className="w-screen pt-20 sm:pt-28 pb-16">
+    <section className="w-screen pt-28 pb-16">
       <div className="container text-secondary flex flex-col lg:flex-row justify-between items-center gap-6 mt-6">
         <div className="flex flex-col gap-3 justify-center">
           <h1 className=" font-bold text-center md:text-start text-4xl">
