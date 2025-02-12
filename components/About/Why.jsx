@@ -20,9 +20,9 @@ const Why = () => {
               Our Mission
             </h3>
             <p className="opacity-85">
-              To empower businesses with innovative digital solutions—ranging
+              To empower businesses with innovative digital solutions; ranging
               from web development and SEO to digital marketing, UI/UX, and
-              custom software—that drive growth, streamline operations, and
+              custom software, that drive growth, streamline operations, and
               enhance customer engagement.
             </p>
           </div>

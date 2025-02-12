@@ -3,7 +3,7 @@ import Image from "next/image";
 const actions = [
   {
     title: "Find a digital solution",
-    content: `Don't wait—supercharge your business with our cutting-edge digital services. 
+    content: `Don't wait, supercharge your business with our cutting-edge digital services. 
     Act now to transform your online presence and stay ahead of the competition!`,
     isfaq: false,
   },

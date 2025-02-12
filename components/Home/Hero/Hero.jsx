@@ -3,7 +3,7 @@ import { Telescope, ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <section className="min-h-screen w-screen  text-secondary flex items-center justify-center pb-8">
-      <div className="container flex flex-col items-center justify-center text-center gap-6 md:gap-8 lg:gap-8  mt-28 sm:mt-16 md:mt-14 lg:mt-24  ">
+      <div className="container flex flex-col items-center justify-center text-center gap-5 md:gap-8 lg:gap-8  mt-28 sm:mt-16 md:mt-14 lg:mt-24  ">
         <h1 className="text-2xl md:text-4xl xl:text-6xl font-semibold ">
           Empowering <span className="text-primary">Your Online Success</span>{" "}
           with Cutting-Edge Solutions

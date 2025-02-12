@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <section className="text-secondary min-h-screen w-full py-5 flex items-center justify-center lg:py-24">
       <div className="contact-border flex-1 container mt-20 ">
-        <h1 className="my-3 text-xl xs-custom:text-2xl sm:text-4xl font-semibold leading-[1.15] text-cool-blue md:mb-5">
+        <h1 className="my-3 text-4xl font-semibold leading-[1.15] text-cool-blue md:mb-5">
           Get in touch
         </h1>
         <p className=" text-base text-cool-blue opacity-90 max-w-3xl sm:text-xl">
