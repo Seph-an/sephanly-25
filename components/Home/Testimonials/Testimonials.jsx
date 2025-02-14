@@ -36,7 +36,7 @@ const Testimonials = () => {
             you. Simply put,{" "}
             <span className="text-primary">more business!</span>
           </h3>
-          <div className="z-[5] -top-40  absolute rounded-full bg-elementary w-[200px]  aspect-square"></div>
+          <div className="hidden md:block z-[5] -top-40  absolute rounded-full bg-elementary w-[200px]  aspect-square"></div>
         </div>
         <div className="w-full relative py-16  ">
           <h2 className="sub-headers ">Trusted by</h2>

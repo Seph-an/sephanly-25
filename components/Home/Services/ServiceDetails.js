@@ -13,7 +13,7 @@ const ServiceDetails = [
     description:
       "Crafting fast, responsive, and user-friendly websites tailored to your brand.",
 
-    link: "/services#web-development",
+    link: "/digital-solutions#web-development",
     Icon: <LayoutTemplate size={20} />,
   },
   {
@@ -21,7 +21,7 @@ const ServiceDetails = [
     description:
       "Boosting your visibility and driving organic traffic through proven SEO strategies.",
 
-    link: "/services#seo",
+    link: "/digital-solutions#seo",
     Icon: <ChartLine size={20} />,
   },
   {
@@ -29,7 +29,7 @@ const ServiceDetails = [
     description:
       "Connecting you with your audience through data-driven campaigns that deliver results.",
 
-    link: "/services#digital-marketing",
+    link: "/digital-solutions#digital-marketing",
     Icon: <Share2 size={20} />,
   },
   {
@@ -37,7 +37,7 @@ const ServiceDetails = [
     description:
       "Streamlining operations by integrating powerful APIs into your systems.",
 
-    link: "/services#api-integration",
+    link: "/digital-solutions#api-integration",
     Icon: <Webhook size={20} />,
   },
   {
@@ -45,7 +45,7 @@ const ServiceDetails = [
     description:
       "Designing intuitive and visually stunning interfaces that captivate and enhance user experiences.",
 
-    link: "/services#ui-ux-design",
+    link: "/digital-solutions#ui-ux-design",
     Icon: <LaptopMinimalCheck size={20} />,
   },
   {
@@ -53,7 +53,7 @@ const ServiceDetails = [
     description:
       "Building bespoke software solutions that solve your unique business challenges.",
 
-    link: "/services#custom-software",
+    link: "/digital-solutions#custom-software",
     Icon: <GlobeLock size={20} />,
   },
 ];
