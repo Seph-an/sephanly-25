@@ -100,24 +100,12 @@ const Footer = () => {
               <h2 className={footer_style}>Services</h2>
             </div>
             <ul className="flex flex-col text-opacity-85">
-              <Link href="#" className="">
-                Web development
-              </Link>
-              <Link href="#" className="">
-                SEO
-              </Link>
-              <Link href="#" className="">
-                Digital Marketing
-              </Link>
-              <Link href="#" className="">
-                API Integration
-              </Link>
-              <Link href="#" className="">
-                UI/UX
-              </Link>
-              <Link href="#" className="">
-                Custom Software
-              </Link>
+              <Link href="/digital-solutions/#Web">Web development</Link>
+              <Link href="/digital-solutions/#Seo">SEO</Link>
+              <Link href="/digital-solutions/#Digital">Digital Marketing</Link>
+              <Link href="/digital-solutions/#Api">API Integration</Link>
+              <Link href="/digital-solutions/#Uix">UI/UX</Link>
+              <Link href="/digital-solutions/#Custom">Custom Software</Link>
             </ul>
           </div>
           <div className="policies flex flex-col">
@@ -130,12 +118,8 @@ const Footer = () => {
               <h2 className={footer_style}>Policies</h2>
             </div>
             <ul className="flex flex-col">
-              <Link href="/privacy_policy" className="">
-                Privacy Policy
-              </Link>
-              <Link href="/terms_of_service" className="">
-                Terms of Service
-              </Link>
+              <Link href="/privacy_policy">Privacy Policy</Link>
+              <Link href="/terms_of_service">Terms of Service</Link>
             </ul>
           </div>
         </div>
@@ -149,30 +133,14 @@ const Footer = () => {
             <h2 className={footer_style}>Company</h2>
           </div>
           <ul className="flex flex-col">
-            <Link href="#" className="">
-              Home
-            </Link>
-            <Link href="#" className="">
-              About
-            </Link>
-            <Link href="#" className="">
-              Services
-            </Link>
-            <Link href="#" className="">
-              Going Online
-            </Link>
-            <Link href="#" className="">
-              Trusted by
-            </Link>
-            <Link href="#" className="">
-              FAQ
-            </Link>
-            <Link href="#" className="">
-              Blog
-            </Link>
-            <Link href="#" className="">
-              Careers
-            </Link>
+            <Link href="/">Home</Link>
+            <Link href="/about-us">About</Link>
+            <Link href="/digital-solutions">Services</Link>
+            <Link href="/#testimonials">More money</Link>
+            <Link href="/#layman">Online analogy</Link>
+            <Link href="/FAQs-about-web-development-and-seo">FAQ</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/careers">Careers</Link>
           </ul>
         </div>
 
@@ -197,7 +165,7 @@ const Footer = () => {
         <p className="text-sm text-center font-light text-secondary">
           {`${year}. All rights reserved | Developed by: `}
           <span className="text-primary font-regular">
-            <Link href="#" className="underline">
+            <Link href="/" className="underline">
               Sephanly
             </Link>
           </span>

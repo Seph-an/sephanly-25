@@ -14,7 +14,7 @@ const RenderInquiryForm = () => {
     email: "",
     message: "",
   });
-
+  const [buttonColor, setButtonColor] = useState("bg-primary");
   const [formErrors, setFormErrors] = useState({
     name: false,
     email: false,
@@ -74,7 +74,7 @@ const RenderInquiryForm = () => {
 
   const mutation = useMutation({
     mutationFn: async (formData) => {
-      const { data } = await axios.post("/api/quotation", formData);
+      const { data } = await axios.post("/api/inquiries", formData);
       return data;
     },
     onSuccess: (data) => {
@@ -84,11 +84,18 @@ const RenderInquiryForm = () => {
       // After 3 seconds, revert the success state back to default
       setTimeout(() => {
         setIsSuccess(false);
+        setButtonColor("bg-primary");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
         // toggleVisibilityChatForm();
       }, 3000);
     },
     onError: (error) => {
       setIsSubmitting(false);
+      setButtonColor("bg-primary");
       setIsError(true);
       setError(error?.message || "An error occurred");
     },
@@ -99,6 +106,7 @@ const RenderInquiryForm = () => {
     setIsSubmitting(true);
     setIsError(false);
     setError("");
+    setButtonColor("bg-green-800");
     mutation.mutate(formData);
   };
 
@@ -106,6 +114,7 @@ const RenderInquiryForm = () => {
     <div>
       <InquiryForm
         formData={formData}
+        buttonColor={buttonColor}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         formErrors={formErrors}

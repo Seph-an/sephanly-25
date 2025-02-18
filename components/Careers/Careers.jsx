@@ -5,7 +5,7 @@ const Careers = () => {
   return (
     <section className="w-screen pt-28 pb-16">
       <div className="container text-secondary flex flex-col lg:flex-row justify-between items-center gap-6 mt-6">
-        <div className="flex flex-col gap-3 justify-center">
+        <div className="lg:flex-1 flex flex-col gap-3 justify-center">
           <h1 className=" font-bold text-center md:text-start text-4xl">
             Careers
           </h1>
@@ -55,7 +55,7 @@ const Careers = () => {
           width={400}
           height={300}
           sizes="(max-width: 600px) 100%, (max-width: 1200px) 300px, 33vw"
-          className="service-image"
+          className="service-image lg:flex-1"
         />
       </div>
     </section>

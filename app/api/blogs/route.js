@@ -21,9 +21,9 @@ export async function GET(req) {
   }
   if (page) {
     url.searchParams.append("pagination[page]", page);
-    url.searchParams.append("pagination[pageSize]", "2");
+    url.searchParams.append("pagination[pageSize]", "7");
   } else {
-    url.searchParams.append("pagination[pageSize]", "2");
+    url.searchParams.append("pagination[pageSize]", "7");
   }
 
   // console.log("Final url:", url.toString());

@@ -74,6 +74,9 @@ html {
   }
 }
 /* mt-6 sm:mt-12  */
+.hero-btn {
+  @apply w-[300px] lg:w-fit gap-2 p-5 lg:p-3 xl:p-5 text-lg lg:text-base xl:text-xl  bg-primary text-tertiary rounded-md shadow-lg font-medium flex justify-center items-center flex-nowrap transition-all ease-in-out delay-150 hover:bg-green-800;
+}
 .large-btn {
   @apply p-5 text-xl w-[300px] gap-3  bg-primary text-tertiary rounded-md shadow-lg font-medium flex justify-center items-center  transition-all ease-in-out delay-150 hover:bg-green-800;
 }

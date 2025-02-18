@@ -5,6 +5,7 @@ import axios from "axios";
 import QuotationForm from "./QuotationForm";
 
 const RenderQuotationForm = ({ onClose }) => {
+  const [buttonColor, setButtonColor] = useState("bg-primary");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -109,13 +110,12 @@ const RenderQuotationForm = ({ onClose }) => {
     formData.phone &&
     formData.email &&
     formData.service &&
-    formData.site &&
-    formData.message &&
-    isPrivacyChecked;
+    // formData.site &&
+    formData.message;
 
   const mutation = useMutation({
     mutationFn: async (formData) => {
-      const { data } = await axios.post("/api/quotation", formData);
+      const { data } = await axios.post("/api/quotations", formData);
       return data;
     },
     onSuccess: (data) => {
@@ -125,11 +125,21 @@ const RenderQuotationForm = ({ onClose }) => {
       // After 3 seconds, revert the success state back to default
       setTimeout(() => {
         setIsSuccess(false);
+        setButtonColor("bg-primary");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          site: "",
+          service: "",
+          message: "",
+        });
         onClose();
       }, 3000);
     },
     onError: (error) => {
       setIsSubmitting(false);
+      setButtonColor("bg-primary");
       setIsError(true);
       setError(error?.message || "An error occurred");
     },
@@ -140,6 +150,7 @@ const RenderQuotationForm = ({ onClose }) => {
     setIsSubmitting(true);
     setIsError(false);
     setError("");
+    setButtonColor("bg-green-800");
     mutation.mutate(formData);
   };
 
@@ -147,12 +158,11 @@ const RenderQuotationForm = ({ onClose }) => {
     <div>
       <QuotationForm
         formData={formData}
+        buttonColor={buttonColor}
         setFormData={setFormData}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         formErrors={formErrors}
-        isPrivacyChecked={isPrivacyChecked}
-        setIsPrivacyChecked={setIsPrivacyChecked}
         isFormValid={isFormValid}
         isSubmitting={isSubmitting}
         isSuccess={isSuccess}

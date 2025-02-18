@@ -10,11 +10,11 @@ const Layman = () => {
             key={index}
             className="bg-green-100 snap-start flex-shrink-0 w-[80vw] sm:w-auto shadow-md p-3 rounded-lg"
           >
-            <h3 className="font-semibold text-start text-green-800">
+            <h3 className="font-semibold text-start text-primary">
               {index + 1}. <span className="underline">{concept.concept}</span>
             </h3>
-            <h3 className="font-medium text-start">
-              <span className="text-green-800">Analogy:</span> {concept.analogy}
+            <h3 className="font-medium text-start my-1">
+              <span className="text-primary">Analogy:</span> {concept.analogy}
             </h3>
             <p>{concept.explanation}</p>
           </div>

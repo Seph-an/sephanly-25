@@ -6,7 +6,7 @@ const BlogCTA = ({ pagination }) => {
     <section className="w-screen">
       <div
         className={`${
-          pageCount < 2 && "mt-16 lg:mt-20"
+          pageCount < 2 && "mt-0 md:mt-5 lg:mt-20"
         } pt-5 pb-8 w-screen text-secondary bg-gradient-to-b from-transparent via-green-100 to-green-100`}
       >
         <div className="container flex flex-col items-center gap-6 pb-8">

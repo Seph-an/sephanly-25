@@ -1,31 +1,49 @@
 import BlogCard from "./BlogCard";
+import getFeaturedPosts from "./GetFeaturedPosts";
+
 import { useQuery } from "@tanstack/react-query";
 import { fetchBlogs } from "@utils/fetchBlogs";
+import { Loader } from "lucide-react";
 
 const BlogCards = () => {
-  const { data, isLoading, error } = useQuery(["blogs"], fetchBlogs, {
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["blogs", {}],
+    queryFn: () => fetchBlogs({}),
     staleTime: 5 * 60 * 1000,
   });
 
   if (isLoading)
     return (
-      <div className="text-cool-blue mt-16 mb-16 text-center">
-        Loading featured blogs...
+      <div className="text-secondary text-xl my-16 container grid place-content-center">
+        <div className="flex gap-5 items-center">
+          <Loader color="#16a34a" size={40} className="animate-spin" />
+          <span>Fetching blogs...</span>
+        </div>
       </div>
     );
-  if (error) return <div>Error loading featured blogs.</div>;
+  if (error)
+    return (
+      <div className="text-red-500 my-16 container grid place-content-center">
+        Error fetching blogs: {error}
+      </div>
+    );
 
-  const featured = data.filter((blog) => blog.isFeatured);
+  const blogPosts = data?.data?.data;
+  const featuredPosts = getFeaturedPosts(blogPosts);
 
   return (
-    <div
-      className="mt-12 mb-8 lg:mt-16 pb-4 w-full flex lg:justify-center gap-2 xs:gap-4  overflow-x-scroll"
-      // className="featured_blog w-full gap-4 flex overflow-scroll lg:gap-6 lg-custom:flex-1  lg-custom:items-start lg-custom:justify-between mt-8 lg-custom:mt-16 mb-8"
-    >
-      {featured.length ? (
-        featured.map((blog) => <BlogCard key={blog.id} post={blog} />)
+    <div className="mt-12 mb-8 lg:mt-16 pb-4 w-full grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6">
+      {featuredPosts?.length ? (
+        featuredPosts?.map((featuredPost) => (
+          <BlogCard key={featuredPost.id} post={featuredPost} />
+        ))
       ) : (
-        <p>No featured blogs available.</p>
+        <div className="text-red-500 text-xl my-16 container grid place-content-center">
+          <div className="flex gap-5 items-center">
+            <p className="text-2xl">🤷‍♀️</p>
+            <span>No featured posts available</span>
+          </div>
+        </div>
       )}
     </div>
   );

@@ -1,9 +1,8 @@
 import Layman from "./Layman";
 import { ArrowRight } from "lucide-react";
+import Quotation from "@components/Common/Quotation";
 
 const Why = () => {
-  const heroBtnStyle =
-    "bg-green-600 rounded-md text-white shadow-lg py-5 px-5 text-xl w-[300px] font-medium flex justify-center items-center gap-3";
   return (
     <section
       id="layman"
@@ -20,10 +19,8 @@ const Why = () => {
           Get started building your digital footprint today and{" "}
           <span className="text-primary">grow your success online:</span>
         </p>
-        <button className={`${heroBtnStyle}`}>
-          <span>Get quotation now</span>
-          <ArrowRight color="#fff" size={20} strokeWidth={2} />
-        </button>
+
+        <Quotation large={true} />
       </div>
     </section>
   );

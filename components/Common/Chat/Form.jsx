@@ -3,6 +3,7 @@ import { ArrowRight, Loader, Check } from "lucide-react";
 
 export default function Form({
   formData,
+  buttonColor,
   handleChange,
   handleSubmit,
   formErrors,
@@ -20,7 +21,10 @@ export default function Form({
             * compulsory fields.
           </p>
         )}
-        <form onSubmit={handleSubmit} className="flex flex-col gap-1">
+        <form
+          onSubmit={handleSubmit}
+          className="flex text-secondary flex-col gap-1"
+        >
           {/* Name Input */}
           <div>
             <label
@@ -107,9 +111,10 @@ export default function Form({
           <button
             type="submit"
             disabled={!isFormValid || isSubmitting}
-            className={`mt-2 flex justify-center items-center gap-3 px-4 py-2 text-white rounded ${
-              isSuccess ? "bg-green-800" : "bg-primary"
-            }`}
+            // className={`mt-2 flex justify-center items-center gap-3 px-4 py-2 text-white rounded ${
+            //   isSuccess ? "bg-green-800" : "bg-primary"
+            // }`}
+            className={`mt-2 cursor-pointer flex justify-center items-center gap-3 px-4 py-2 text-white rounded transition-colors duration-300 ease-in-out hover:bg-green-800 ${buttonColor}`}
           >
             {isSubmitting ? (
               <>

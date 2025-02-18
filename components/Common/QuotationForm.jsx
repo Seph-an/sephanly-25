@@ -4,6 +4,7 @@ import CustomDropdown from "./CustomSelect";
 
 export default function QuotationForm({
   formData,
+  buttonColor,
   setFormData,
   handleChange,
   handleSubmit,
@@ -198,17 +199,15 @@ export default function QuotationForm({
           {/* Submit Button */}
           <div className="flex justify-between mt-4">
             <button
-              onClick={handleClick}
-              className="px-9 py-2 border text-secondary bg-red-300 rounded hover:bg-red-400"
+              onClick={isSubmitting ? undefined : handleClick}
+              className="px-9 py-2 border text-secondary bg-red-400 rounded hover:bg-red-500"
             >
               Close
             </button>
             <button
               type="submit"
               disabled={!isFormValid || isSubmitting}
-              className={` flex items-center gap-3 px-4 py-2 text-white rounded ${
-                isSuccess ? "bg-green-800" : "bg-primary"
-              }`}
+              className={`cursor-pointer flex items-center gap-3 px-4 py-2 text-white rounded transition-colors duration-300 ease-in-out hover:bg-green-800 ${buttonColor}`}
             >
               {isSubmitting ? (
                 <>
@@ -233,9 +232,12 @@ export default function QuotationForm({
 
           <p className=" text-secondary mt-3 text-center">
             I prefer sending an{" "}
-            <span className="underline font-bold text-sm text-primary">
+            <a
+              href="mailto:solutions@sephanly.com"
+              className="underline font-bold text-sm text-primary"
+            >
               E-mail
-            </span>{" "}
+            </a>{" "}
             directly.
           </p>
         </form>

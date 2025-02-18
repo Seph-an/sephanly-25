@@ -2,11 +2,11 @@ import ServiceCards from "./ServiceCards";
 const Services = () => {
   return (
     <section
-      id="services"
+      id="solutions"
       className="sections-set w-screen min-h-screen flex flex-col items-center text-secondary"
     >
       <div className="container  flex flex-col items-center justify-center">
-        <h2 className="sub-headers">Our digital solutions</h2>
+        <h2 className="sub-headers">Find a digital solution</h2>
         <h3 className="sub-paragraph opacity-90 ">
           Explore our comprehensive range of services designed to{" "}
           <span className="text-primary">elevate your business</span> in today’s

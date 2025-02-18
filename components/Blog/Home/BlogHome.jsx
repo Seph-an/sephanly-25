@@ -54,8 +54,8 @@ const BlogHome = () => {
   return (
     <section className="w-screen min-h-screen mt-8  ">
       <div className="w-full text-secondary py-0 md:py-8 ">
-        <div className=" w-full pt-12 pb-12 bg-gradient-to-b from-transparent via-green-100 to-green-100">
-          <div className="container flex flex-col items-center gap-2 md:gap-3">
+        <div className=" w-full pt-24 lg:pt-16 pb-12 bg-gradient-to-b from-transparent via-green-100 to-green-100">
+          <div className="container flex flex-col items-center gap-4 md:gap-8">
             <h2 className="font-bold text-lg ">Blog</h2>
             <h1 className=" max-w-[600px] text-center text-xl font-semibold md:text-3xl xl:text-4xl">
               Stay <span className="text-primary">in the loop</span> with <br />{" "}
