@@ -43,7 +43,7 @@ const BlogPost = ({ post, pagination, filter }) => {
       </Link>
       <p className="post_summary text-base opacity-90">{truncatedContent}</p>
       <span className="post_time text-sm text-secondary  font-regular">
-        {timeAgo(post.createdAt)} - {post.Read_Time} mins read
+        {timeAgo(post?.createdAt)} - {post?.Read_Time} mins read
       </span>
       <Link
         href={articleUrl}

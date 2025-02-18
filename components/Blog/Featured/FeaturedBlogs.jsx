@@ -14,7 +14,7 @@ const FeaturedBlogs = () => {
         <h2 className="sub-headers">🚀 Stay ahead in the digital space! 🚀</h2>
         <p className="mt-8 text-center text-base lg:text-lg  opacity-90 max-w-5xl">
           Discover the latest insights, trends, and expert tips on web
-          development, SEO, digitla marketing, and more. We bring you valuable
+          development, SEO, digital marketing, and more. We bring you valuable
           knowledge to help you{" "}
           <span className="text-primary">build, optimize, and grow </span>your
           online presence effectively.

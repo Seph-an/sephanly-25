@@ -118,8 +118,8 @@ const Footer = () => {
               <h2 className={footer_style}>Policies</h2>
             </div>
             <ul className="flex flex-col">
-              <Link href="/privacy_policy">Privacy Policy</Link>
-              <Link href="/terms_of_service">Terms of Service</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/terms-of-service">Terms of Service</Link>
             </ul>
           </div>
         </div>

@@ -8,7 +8,7 @@ const Layman = () => {
         {concepts.map((concept, index) => (
           <div
             key={index}
-            className="bg-green-100 snap-start flex-shrink-0 w-[80vw] sm:w-auto shadow-md p-3 rounded-lg"
+            className="bg-green-100 snap-start flex-shrink-0 w-[80vw] sm:w-auto shadow-md p-4 rounded-lg"
           >
             <h3 className="font-semibold text-start text-primary">
               {index + 1}. <span className="underline">{concept.concept}</span>

@@ -64,9 +64,13 @@ export default function CookieAlert() {
             Reject
           </button>
         </div>
-        <a href="#" className="text-primary mt-4 underline">
-          Learn more about our cookie policy
-        </a>
+        <p>
+          You can check out our{" "}
+          <span className="font-medium">cookie policy</span>
+          <a href="/cookie-policy" className="text-primary mt-4 underline">
+            here
+          </a>
+        </p>
       </div>
     </div>
   );
