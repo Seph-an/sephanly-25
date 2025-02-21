@@ -46,7 +46,7 @@ const Chat = () => {
             <MessagesSquare color="#16a34a" size={36} strokeWidth={1} />
           </div>
 
-          <span className="text-xs sm:text-sm text-center ">
+          <span className="text-xs sm:text-sm text-center">
             Hey 🖐,
             <br /> Let's chat!
           </span>

@@ -37,12 +37,12 @@ const Nav = () => {
     <nav className="nav_bar container ">
       <Link href="/" className="">
         <Image
-          src="/logo-web-development.svg"
+          src="/new-sephanly-web-dev-web-design-seo-logo.svg"
           priority
-          alt="sephanly-software-solutions-logo"
+          alt="new-sephanly-web-dev-web-design-seo-logo"
           width={250}
           height={250}
-          className="w-[200px] sm:w-[250px] ml-[-1rem]  object-contain"
+          className="w-[200px] sm:w-[250px] ml-[-1rem] object-contain"
         />
       </Link>
 
@@ -74,8 +74,8 @@ const Nav = () => {
                   href === "/blog" && pathname.startsWith("/blog")
                     ? "text-primary"
                     : pathname === href
-                    ? "text-primary"
-                    : "text-secondary"
+                      ? "text-primary"
+                      : "text-secondary"
                 }`}
               >
                 {label}
